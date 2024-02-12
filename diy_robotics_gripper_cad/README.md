@@ -1,6 +1,39 @@
 ### 1. get parts
 ![img1](images/img1.png)
 
+
+
+
+① "mounting_adapter" (1 pcs.)
+
+② "laufschiene" (1 pcs.)
+
+③ "rack" (2 pcs.)
+
+④ "rack_spacer" (2 pcs.)
+
+⑤ "gegenstueck_rack" (2 pcs.)
+
+⑥ "gear_16_teeth" (2 pcs.)
+
+⑦ "finger_50mm" (2 pcs.)
+
+⑧ Foam rubber strips (2 pcs.)
+
+⑨ Servo-Motors SG90 continuous drive (2 pcs.)
+
+⑩  Servo screw for drive socket (2 pcs.)
+
+⑪ Servo fastening screw (2 pcs.)
+
+⑫ Countersunk head screw M3x8 (4 pcs.)
+
+⑬ Screw countersunk head M3x12 (8 pcs.)
+
+
+
+
+
 ### 2. prepare parts
 ![img2](images/img2.png)
 
