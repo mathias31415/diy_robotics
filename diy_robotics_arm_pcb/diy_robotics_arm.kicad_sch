@@ -5879,7 +5879,7 @@
     (property "Reference" "J9" (at 20.32 184.15 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "VCC_Servos" (at 20.32 186.69 0)
+    (property "Value" "VCC_Stepper" (at 20.32 186.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" (at 20.32 193.04 0)
