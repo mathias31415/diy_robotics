@@ -40,6 +40,8 @@
 ### 3. install servo mounts
 ![img3](images/img3.png)
 
+(The parts must first be inserted into the housing and then screwed together. The parts cannot be installed in the housing when they are screwed together.)
+
 ### 4. mount servos
 ![img4](images/img4.png)
 
