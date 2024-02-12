@@ -4,11 +4,14 @@
 
 This repo contains the results of a project work at the University of Applied Sciences Karlsruhe by Robin Wolf, Hannes Bornemann, and Mathias Fuhrer. As part of the project work, the [Six-Axis Robot Arm WE-R2.4 from LoboCNC](https://www.printables.com/de/model/132260-we-r24-six-axis-robot-arm) was set up and a new gripper was developed.
 
-![img7](diy_robotics_gripper_cad/images/img7.png)
+ # TODO: Img Robot
 
 The CAD files of the gripper and assembly instructions can be found in folder [diy_robotics_gripper_cad](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_cad).
 
+![img7](diy_robotics_gripper_cad/images/img7.png)
+
 Two PCBs were designed for the electrical wiring: one PCB for the 6 axes and one PCB for the gripper. The KiCAD files can be found in the folders [diy_robotics_arm_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_pcb) and [diy_robotics_gripper_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_pcb).
+![pcb_arm_and_gripper](images/pcb_arm_and_gripper.png)
 
 To control the 6 axes and the gripper, ROS2 implementations were written that communicate via Wifi with an ESP32, from which the axes and the gripper are then moved. One ESP32 is responsible for the 6 axes, and the second ESP32 is responsible for the gripper.
 
