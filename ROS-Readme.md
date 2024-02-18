@@ -33,8 +33,14 @@ Part 3 of our robotics system integration is the application. Firstly these pack
 
 So in total we need to develop 3 description packages, 2 driver packages and 3 application packages.
 
+To build our robotics control system from the introduced packages, we need to connect them.
+There are multiple possible ways to connect the provided packages/ the docker containers. We have choosen a "stacked" technique. When launching the whole system with all packages included, this container was built in different stages. Every stage inside the Dockerfile defines a image which represents one step of the build process. In every stage one of the depencencie packages and needed ROS extentions get installed/added to the container. The next stage uses this stage as their base image and puts another package on top. 
+In our implementation all stages of the image were build everytime you want to run the container, for further deployment it's also possible to upload the final built image in dockerhub or other cloud platforms and just call this instead of rebuilding at every call. The following chart should display the concept and how we build our whole ROS-Framework from the introduced packages:
+
+-------Grafik gesamt ----------
+
 ## Development
-Every mentioned package was developed mor or less independend. For simple development and deployment, every package has its own GIT repository.
+Every mentioned package was developed more or less independend. For simple development and deployment, every package has its own GIT repository.
 In the development phase of the packages we connect a source folder from our host-machine to the docker container. This setup enables coding on the host-machine and testing the packages in a docker container at the same time. All changes in this setup are pushed on the dev branch of the desired repo. 
 pleas refer to the Readme's in the desired package repos for deeper informations about the structure, development process and content of the introduced packages.
 
@@ -45,4 +51,5 @@ If you want to run the package on your PC in the deployed docker container, you 
 1) Clone the Repo which contains the package you want to run to your LINUX-PC. (hint: working docker installation required)
 2) Open a new terminal and navigate to the cloned content
 3) build the docker container from the provided image by sourcing the run script. ```./run.sh```
+
 Now you are inside the container and the package should run -> building, sourcing and launching the ROS package was done automatically
