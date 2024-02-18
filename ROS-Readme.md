@@ -1,9 +1,10 @@
 # Main Readme for the ROS-Integration of our DIY-Robotarm and Gripper
 
 This Readme file works as an overview about the complete ROS-integration of our robot and gripper. It should clarify our way to set up the whole ROS project before you take a deeper inlook into the single package Readme's.
-ROS (Robot Operating System) is a open-source software framework for robotics tasks. In the following we will use the ROS2 distribution Humble. 
 
 Every mentioned package has its own readme where deeper informations about the structure, development process and content are provided.
+
+ROS (Robot Operating System) is a open-source software framework for robotics tasks. In the following we will use the ROS2 distribution Humble. 
 
 ## Main Ideas/ Tasks
 - ROS runs on a LINUX- device and sends control messages to the ESP32 microcontroller on the hardware side. No complex calculations on the ESP32 are needed.
