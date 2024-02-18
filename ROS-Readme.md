@@ -37,7 +37,7 @@ In our implementation all stages of the image were build everytime you want to r
 
 ![staged_build](images/staged_build.png)
 
-So in total we need to develop 3 description packages, 2 driver packages and 3 application packages.
+So in total we need to develop 3 description packages, 2 driver packages and 2 application packages.
 
 ## Development
 Every mentioned package was developed more or less independend. For simple development and deployment, every package has its own GIT repository.
