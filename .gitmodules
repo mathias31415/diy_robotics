@@ -1,3 +1,6 @@
 [submodule "ROS-Packages/diy_robot_full_cell_description"]
 	path = ROS-Packages/diy_robot_full_cell_description
 	url = https://github.com/RobinWolf/diy_robotarm_wer24_description
+[submodule "ROS-Packages/diy_soft_gripper_description"]
+	path = ROS-Packages/diy_soft_gripper_description
+	url = https://github.com/RobinWolf/diy_soft_gripper_description
