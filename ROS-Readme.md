@@ -2,6 +2,7 @@
 
 This Readme file works as an overview about the complete ROS-integration of our robot and gripper. ROS (Robot Operating System) is a open-source software framework for robotics tasks. In the following we will use the ROS2 distribution Humble. 
 
+
 ## Main Ideas/ Tasks
 - ROS runs on a LINUX- device and sends control messages to the ESP32 microcontroller on the hardware side. No complex calculations on the ESP32 are needed.
 - Ensure that developed ROS-Packages are reusable for other projects -> Modularity is recommendet
@@ -22,7 +23,7 @@ Our full diy robotics "cell" consists of the 6-axis arm, the gripper and the sub
 Part 2 are the drivers. The drivers link the description (digital robot) to the real hardware. For the arm and the gripper we use different control stategies.
 Due to the complexity of controlling 6 dependent axis, the arm is fully included in the ROS2-Control framework. The control message to the ESP32 contains the next axis setpoints (next interpolated point in th C-Space when creating trajectories), some status bits and some bits for communication management. Because we kept the hardware as sinple (and cheap) as possible, no sensors for joint-states are included. We operate the arm in an Open-Loop control. If the arm is used inside the specified physical limits, this should not be a disadvantage. For more informations on this point, please switch to the overall-Readme.
 Because of simplicity the gripper doesn't need to be integrated in ROS2-Control. The gripper driver package only contains a simple service-definition wich sends a bool (0 or 1) to the robot where 0 equals open and 1 close.
-So th total we need 2 seperate driver packages:
+So in total we need 2 seperate driver packages:
 
 ------------GRAFIK DREVER PACKAGES------------
 
@@ -30,9 +31,18 @@ Part 3 of our robotics system integration is the application. Firstly these pack
 
 --------GRAFIK APPPLICATION PACKAGES ---------------
 
+So in total we need to develop 3 description packages, 2 driver packages and 3 application packages.
 
 ## Development
-Every mentioned package was developed mor or less independend. 
+Every mentioned package was developed mor or less independend. For simple development and deployment, every package has its own GIT repository.
+In the development phase of the packages we connect a source folder from our host-machine to the docker container. This setup enables coding on the host-machine and testing the packages in a docker container at the same time. All changes in this setup are pushed on the dev branch of the desired repo. 
+pleas refer to the Readme's in the desired package repos for deeper informations about the structure, development process and content of the introduced packages.
 
 ## Deployment
-Startprocedure
+After development was finished we reorganized the structure inside the package to the common ROS conventions and disconnected the source folder from our docker container. This was pushed to the main branch of the desired repo. For further deployment the repo which contains all the code gets directly cloned in the docker container while building the container from the provided image.
+
+If you want to run the package on your PC in the deployed docker container, you should follow the given guideline:
+1) Clone the Repo which contains the package you want to run to your LINUX-PC. (hint: working docker installation required)
+2) Open a new terminal and navigate to the cloned content
+3) build the docker container from the provided image by sourcing the run script. ```./run.sh```
+Now you are inside the container and the package should run -> building, sourcing and launching the ROS package was done automatically
