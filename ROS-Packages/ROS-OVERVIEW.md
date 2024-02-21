@@ -31,17 +31,17 @@ So in total we need 2 seperate driver packages:
 ![driver_packages](../images/driver_packages.png)
 
 **Part 3 of our robotics system integration is the application.** Firstly these packages contain Moveit configurations to enable motion planning to provide trajectories for the robot. Secondly a user-friendly interface for programming the robot is integrated here. At the end the upcoming users should be able to develop robotic applications with our diy hardware by just writing a simple python code where trajectories and motions (PTP, LIN) could be programmed.
-To generate an interface between Moveit2 and our python application we implemented some services as moveit wrappers. Clients for these services are initialized and called by the methods in your final application. For a deeper view inside the moveit and application package, please refer to these repos: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+To generate an interface between Moveit2 and our python application we implemented some services as moveit wrappers. Clients for these services are initialized and called by the methods in your final application. For a deeper view inside the moveit and application package, please refer to these repos: https://github.com/RobinWolf/diy_robot_wer24_moveit, https://github.com/RobinWolf/diy_robot_application
 
-![application_packages](../images/application_packages.png)
+![application_packages](../images/application_packages_new.png)
 
 To build our robotics control system from the introduced packages, we need to connect them.
 There are multiple possible ways to connect the provided packages/ the docker containers. We have choosen a "stacked" technique. When launching the whole system with all packages included, this container was built in different stages. Every stage inside the Dockerfile defines a image which represents one step of the build process. In every stage one of the depencencie packages and needed ROS extentions get installed/added to the container. The next stage uses this stage as their base image and puts another package on top. 
 In our implementation all stages of the image were build everytime you want to run the container, for further deployment it's also possible to upload the final built image in dockerhub or other cloud platforms and just call this instead of rebuilding at every call. The following chart should display the concept and how we build our whole ROS-Framework from the introduced packages:
 
-![staged_build](../images/staged_build.png)
+![staged_build](../images/staged_build_new.png)
 
-So in total we need to develop 3 description packages, 2 driver packages and 2 application packages.
+So in total we need to develop 3 description packages, 2 driver packages and 1 moveit package and 3 application packages.
 
 ## Development
 Every mentioned package was developed more or less independend. For simple development and deployment, every package has its own GIT repository.
