@@ -31,6 +31,7 @@ So in total we need 2 seperate driver packages:
 ![driver_packages](../images/driver_packages.png)
 
 **Part 3 of our robotics system integration is the application.** Firstly these packages contain Moveit configurations to enable motion planning to provide trajectories for the robot. Secondly a user-friendly interface for programming the robot is integrated here. At the end the upcoming users should be able to develop robotic applications with our diy hardware by just writing a simple python code where trajectories and motions (PTP, LIN) could be programmed.
+To generate an interface between Moveit2 and our python application we implemented some services as moveit wrappers. Clients for these services are initialized and called by the methods in your final application. For a deeper view inside the moveit and application package, please refer to these repos: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ![application_packages](../images/application_packages.png)
 
