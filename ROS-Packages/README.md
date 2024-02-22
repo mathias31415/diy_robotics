@@ -28,7 +28,7 @@ Our full diy robotics "cell" consists of the 6-axis arm, the gripper and the sub
 ![description_packages](../images/description_packages.png)
 
 **Part 2 are the drivers.** The drivers link the description (digital robot) to the real hardware. For the arm and the gripper we use different control stategies.
-Due to the complexity of controlling 6 dependent axis, the arm is fully included in the ROS2-Control framework. The control message to the ESP32 contains the next axis setpoints (next interpolated point in th C-Space when creating trajectories), some status bits and some bits for communication management. Because we kept the hardware as sinple (and cheap) as possible, no sensors for joint-states are included. We operate the arm in an Open-Loop control. If the arm is used inside the specified physical limits, this should not be a disadvantage. For more informations on this point, please switch to the overall-Readme.
+Due to the complexity of controlling 6 dependent axis, the arm is fully included in the ROS2-Control framework. The control message to the ESP32 contains the next axis setpoints (next interpolated point in the C-Space when creating trajectories), some status bits and some bits for communication management. Because we kept the hardware as sinple (and cheap) as possible, no sensors for joint-states are included. We operate the arm in an Open-Loop control. If the arm is used inside the specified physical limits, this should not be a disadvantage. For more informations on this point, please switch to the overall-Readme.
 Because of simplicity the gripper doesn't need to be integrated in ROS2-Control. The gripper driver package only contains a simple service-definition wich sends a bool (0 or 1) to the robot where 0 equals open and 1 close.
 So in total we need 2 seperate driver packages:
 
@@ -56,7 +56,7 @@ So in total we need to develop 3 description packages, 2 driver packages and 3 m
 ## Development
 Every mentioned package was developed more or less independend. For simple development and deployment, every package has its own GIT repository.
 In the development phase of the packages we connect a source folder from our host-machine to the docker container. This setup enables coding on the host-machine and testing the packages in a docker container at the same time. All changes in this setup are pushed on the dev branch of the desired repo. 
-pleas refer to the Readme's in the desired package repos for deeper informations about the structure, development process and content of the introduced packages.
+Please refer to the Readme's in the desired package repos for deeper informations about the structure, development process and content of the introduced packages.
 
 ## Deployment
 After development was finished we reorganized the structure inside the package to the common ROS conventions and disconnected the source folder from our docker container. This was pushed to the main branch of the desired repo. For further deployment the repo which contains all the code gets directly cloned in the docker container while building the container from the provided image.
