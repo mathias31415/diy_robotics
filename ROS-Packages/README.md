@@ -10,7 +10,7 @@ ROS (Robot Operating System) is a open-source software framework for robotics ta
 - ROS runs on a LINUX- device and sends control messages to the ESP32 microcontroller on the hardware side. No complex calculations on the ESP32 are needed.
 - Ensure that developed ROS-Packages are reusable for other projects -> Modularity is recommendet
 - Use docker in development and deployment, so no version and dependencie issues should occur when ROS is running on other computers.
-- The 6 axis robotic arm shold be controlled within the ROS2-Control framework, for the gripper only a bool state control (opening and closing) shold be implemented.
+- The 6 axis robotic arm shold be controlled within the ROS2-Control framework, for the gripper only a bool state control (opening and closing) should be implemented.
 - Set up Moveit 2 for motion planning
 - Implement the python user interface as known from the other robotic-systems in the IRAS laboratory.
 
