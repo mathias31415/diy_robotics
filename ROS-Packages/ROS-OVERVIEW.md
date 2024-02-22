@@ -66,4 +66,6 @@ If you want to run the package on your PC in the deployed docker container, you 
 2) Open a new terminal and navigate to the cloned content
 3) build the docker container from the provided image by sourcing the run script. ```./run.sh```
 
-Now you are inside the container and the package should run -> building, sourcing and launching the ROS package was done automatically
+Now you are inside the container.
+- If you have run some of the dependencie packages, the current development state should be build, sourced and launched automatically. For this please refer to the different package repos.
+- If you have run the application package, all dependencies are build and sourced automatically. You can start buildig your own robotics application with the python interface !
