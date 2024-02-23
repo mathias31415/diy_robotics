@@ -10,3 +10,6 @@
 [submodule "ROS-Packages/diy_robot_cell_description"]
 	path = ROS-Packages/diy_robot_cell_description
 	url = https://github.com/RobinWolf/diy_robot_full_cell_description
+[submodule "ROS-Packages/diy_robotarm_wer24_driver"]
+	path = ROS-Packages/diy_robotarm_wer24_driver
+	url = https://github.com/RobinWolf/diy_robotarm_wer24_driver
