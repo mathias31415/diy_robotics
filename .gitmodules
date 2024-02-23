@@ -19,3 +19,6 @@
 [submodule "ROS-Packages/diy_robot_application"]
 	path = ROS-Packages/diy_robot_application
 	url = https://github.com/RobinWolf/diy_robot_application
+[submodule "ROS-Packages/diy_robot_wer24_moveit"]
+	path = ROS-Packages/diy_robot_wer24_moveit
+	url = https://github.com/RobinWolf/diy_robot_wer24_moveit
