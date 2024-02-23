@@ -16,3 +16,6 @@
 [submodule "ROS-Packages/diy_soft_gripper_driver"]
 	path = ROS-Packages/diy_soft_gripper_driver
 	url = https://github.com/RobinWolf/diy_soft_gripper_driver
+[submodule "ROS-Packages/diy_robot_application"]
+	path = ROS-Packages/diy_robot_application
+	url = https://github.com/RobinWolf/diy_robot_application
