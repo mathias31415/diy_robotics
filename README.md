@@ -15,12 +15,12 @@ Two PCBs were designed for the electrical wiring: one PCB for the 6 axes and one
 
 To control the 6 axes and the gripper, ROS2 implementations were written that communicate via Wifi with an ESP32, from which the axes and the gripper are then moved. One ESP32 is responsible for the 6 axes, and the second ESP32 is responsible for the gripper.
 
-The ROS2 packages are packaged in Docker containers so that they can be used by others without any problems. The ROS2 packages can be found in the repos [diy_robotarm_wer24_driver](https://github.com/RobinWolf/diy_robotarm_wer24_driver), [diy_robotarm_wer24_driver](https://github.com/RobinWolf/diy_robotarm_wer24_driver), [diy_robot_full_cell_description](https://github.com/RobinWolf/diy_robot_full_cell_description), [diy_soft_gripper_description](https://github.com/RobinWolf/diy_soft_gripper_description), and [diy_soft_gripper_driver](https://github.com/RobinWolf/diy_soft_gripper_driver).
+The ROS2 packages are packaged in Docker containers so that they can be used by others without any problems. The repos of our ROS2 packages are linked in the folder [ROS-Packages](https://github.com/mathias31415/diy_robotics/tree/main/ROS-Packages). To just use our ROS application go to the repo [diy_robot_application](https://github.com/RobinWolf/diy_robot_application) and follow the HowTo. To understand our implementation you should read all readmes of our ROS repos 
 
-The PC on which the ROS2 packages are executed must be connected to the same Wifi as the two ESP32s. The two ESP32s then receive messages from the PC via TCP-IP with the commands for the gripper and the 6-axes and then control the gripper and the axes accordingly. The VS-Code PlatformIO project folders for the ESP32 of the gripper and the axes can be found in the folders [diy_robotics_arm_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_esp32) and [diy_robotics_gripper_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_esp32).
+The PC on which the ROS2 packages are executed must be connected to the same Wifi as the two ESP32s. The two ESP32s then receive messages from the PC via TCP-IP with the commands for the gripper and the 6-axes and then control the gripper and the axes accordingly. The VS-Code PlatformIO project folders for the ESP32 of the gripper and the axes can be found in the folders [diy_robotics_arm_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_esp32) and [diy_robotics_gripper_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_esp32). Make sure to adapt the SSID and IP address as well as the password of your Wifi in the ``Configuration.h``
 
 
-The [hardwaretest_without_ROS](https://github.com/mathias31415/diy_robotics/tree/main/hardwaretest_without_ROS) folder contains additional programs to test the hardware without ros via the Serial Monitor.
+The [hardwaretest_without_ROS](https://github.com/mathias31415/diy_robotics/tree/main/hardwaretest_without_ROS) folder contains additional programs to test the hardware without ROS via the Serial Monitor.
 
 
 ## Possible improvements
