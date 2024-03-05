@@ -48,9 +48,9 @@ public:
 
   void gripperOpen()
   {                  
-    myservo0.writeMicroseconds(1000);   //  range:  500-1500 (negative turning direction, 500 = maximum torque, 1500 = torque 0)
-    myservo1.writeMicroseconds(1000);   //          1500-2500 (positive turning direction, 1500 = torque 0, 2500 = maximum torque)
-    delay(500);
+    myservo0.writeMicroseconds(1750);   //  range:  500-1500 (negative turning direction, 500 = maximum torque, 1500 = torque 0)
+    myservo1.writeMicroseconds(1750);   //          1500-2500 (positive turning direction, 1500 = torque 0, 2500 = maximum torque)
+    delay(1500);
     myservo0.writeMicroseconds(1500);   // turn off servo
     myservo1.writeMicroseconds(1500);
     delay(500);
@@ -60,8 +60,8 @@ public:
 
   void gripperClose()
   {
-    myservo0.writeMicroseconds(2000);
-    myservo1.writeMicroseconds(2000);
+    myservo0.writeMicroseconds(1230);
+    myservo1.writeMicroseconds(1230);
     Serial.println("Gripper closed");
     gripperState = 1;
   }
