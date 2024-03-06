@@ -16,7 +16,8 @@ The closing time is set to 10 s and the opening time is 1 s, whereby the load on
 ## Result
 
 Servo 1 fails after about 100 cycles at 30% power. Servo 0 and Servo 3 fail in the following run at 40% power after about 65 and 140 cycles respectively. Finally, servo 2 fails after about 70 cycles at 50% power. As the servos have different maximum torques, the closing force that the gripper can apply with the respective servomotors installed is now measured when the servomotors are operated within the permissible range (10% below failure).
-Result:
+
+Measurements:
 
 Servo 0: 6.57 N
 
