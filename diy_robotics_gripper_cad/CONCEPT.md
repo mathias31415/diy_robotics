@@ -6,12 +6,12 @@ To counteract this, it was decided to use "continuous drive" servos. These servo
 
 ## Testing
 
-When testing the gripper with limited power, the servo withstood approx. 30 % of the maxiumum power for a longer period of time, before breaking down with a higher setting. This setting enables the gripper to close with a force of 6.5 N, which is enough to lift small objects. However, the pinion mounted on the servo's electric mo-tor slipped off the drive shaft several times, which was a major cause of failure, apart from overheating. In hope to get a more realiable solution, there were some more servos of different manufacturers ordered to test them. Therefor they got mounted into a test bar with stop collars to simulate the gripper getting blocked by an object.This simplification oft the servos load when driving the gripper allows to test all servos simultaneously and to wear down only one servo of each kind. 
+When testing the gripper with limited power, the servo withstood approx. 30 % of the maxiumum power for a longer period of time, before breaking down with a higher setting. This setting enables the gripper to close with a force of 6.5 N, which is enough to lift small objects. However, the pinion mounted on the servo's electric mo-tor slipped off the drive shaft several times, which was a major cause of failure, apart from overheating. In hope to get a more realiable solution, there were some more servos of different manufacturers ordered to test them. Therefor they got mounted into a test bar with stop collars to simulate the gripper getting blocked by an object. This simplification oft the servos load when driving the gripper allows to test all servos simultaneously and to wear down only one servo of each kind. 
 
-PICTURE TEST BAR
+![img8](images/img8.png)
 
 Servo 0 is the one ordered at the beginning, on which the pinion has come loose. It has plastic gears. Servo 3 is another servo with plastic gearing from a different ma-nufacturer and servos 1 and 2 are servos from different manufacturers with metal gearing.
-The closing time is set to 10 s and the opening time is 1 s, whereby the load on the motors is increased by 10% after each test run.  A test run is evaluated as passed after 500 cycles (approx. 1.5 h).
+The closing time is set to 10 s and the opening time is 1 s, whereby the load on the motors is increased by 10% after each test run. A test run is evaluated as passed after 500 cycles (approx. 1.5 h).
 
 ## Result
 
@@ -26,4 +26,4 @@ Servo 2: 6.44 N
 
 Servo 3: 5.36 N
 
-Servo 0 offers the best performance with a closing force of 6.57 N. However, due to the loosening gear, the reliability of this servo is rated as insufficient, so the servo with the next lowest closing force is selected. Servo 2 has a closing force of 6.44 N, just below that of servo 0. It also has a metal gear, which should give it a longer life
+Servo 0 offers the best performance with a closing force of 6.57 N. However, due to the loosening gear, the reliability of this servo is rated as insufficient, so the servo with the next highest closing force is selected. Servo 2 has a closing force of 6.44 N, just below that of servo 0. It also has a metal gear, which should give it a longer life
