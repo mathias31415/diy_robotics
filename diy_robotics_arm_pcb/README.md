@@ -3,14 +3,19 @@
 ![pcb_arm](images/pcb_arm.png)
 
 
-### ① 0.96 Inch OLED Display SSD1306 (1 pcs.) 
-### ② ESP-32 (1 pcs.)
-### ③ 2-Pin Screw Terminal 5mm (3 pcs.)
-### ④ Pin Header 1x4 Pin Male 2,54mm (6 pcs.)
-### ⑤ Capacitor 25V 100uF (6 pcs.)
-### ⑥ DRV8825 Stepper Driver (6 pcs.)
-### ⑦ 4-way DIP-Switch 2,54mm (6 pcs.)
+① 0.96 Inch OLED Display SSD1306 (1 pcs.) 
 
+② ESP-32 (1 pcs.)
+
+③ 2-Pin Screw Terminal 5mm (3 pcs.)
+
+④ Pin Header 1x4 Pin Male 2,54mm (6 pcs.)
+
+⑤ Capacitor 25V 100uF (6 pcs.)
+
+⑥ DRV8825 Stepper Driver (6 pcs.)
+
+⑦ 4-way DIP-Switch 2,54mm (6 pcs.)
 
 (①, ② and  ⑥ are plugged into female pin header 2,54mm)
 
