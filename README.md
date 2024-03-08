@@ -67,7 +67,7 @@ The parts for assembling the PCBs are listed below. Note that some parts are req
 | 8 | Female pin header 2,54mm for the display, ESP-32 and Stepper Drivers |  | 1,77 for male + female set | [Link](https://de.aliexpress.com/item/4000873858801.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.e4a5600cBKuomq&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=c41c94ec-099f-42bf-a647-59697bc6a5d5&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:c41c94ec-099f-42bf-a647-59697bc6a5d5,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21EUR%211.77%211.77%21%21%211.89%211.89%21%4021038dfc17098923902746506e96e7%2110000010058190554%21rec%21DE%213958237401%21&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A) |
 
 
-### 2.2 Gripper PCB
+#### 2.2 Gripper PCB
 | Index | Description | Quantity | Total price in € | Link |
 | --- | --- | --- | --- | --- |
 | 1 | 0.96 Inch OLED Display SSD1306 | 1 | 1,78 | [Link](https://de.aliexpress.com/item/1005005970901119.html?spm=a2g0o.order_list.order_list_main.22.4a065c5ffRtZfv&gatewayAdapt=glo2deu) |
