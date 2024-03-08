@@ -48,7 +48,7 @@ The information serves as a guide only. Prices may change over time. It is also 
 ### 2. Gripper
 | Index | Description | Quantity | Total price in € | Link |
 | --- | --- | --- | --- | --- |
-| 1 | Servo MG90s Continous Drive | 2 | 9,00 | [Link](https://de.aliexpress.com/item/1005004550512467.html?spm=a2g0o.order_list.order_list_main.10.12875c5fjUap8p&gatewayAdapt=glo2deu) |
+| 1 | Servo SG90 Continuous Drive (Metal 360 Degree) | 2 | 9,00 | [Link](https://de.aliexpress.com/item/1005004550512467.html?spm=a2g0o.order_list.order_list_main.10.12875c5fjUap8p&gatewayAdapt=glo2deu) |
 
 ### 2. PCBs
 The geber-files for the PCBs can be found in folders [diy_robotics_arm_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_pcb) and [diy_robotics_gripper_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_pcb). With the geber-files, the PCBs can be ordered from any manufacturer. At JLCPCB we paid a total of just over €30 for 5 pieces of both PCBs.
