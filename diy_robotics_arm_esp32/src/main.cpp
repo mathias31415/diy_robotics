@@ -59,7 +59,7 @@ bool onDataReceived(void *data, size_t len, void *response, size_t responseLen)
   
   if((gRobotActive == true))   // If robot is activated by PC
   {
-    if(gEnableAxis && (digitalRead(HARDWARE_ENABLE) == LOW)) 
+    if(gEnableAxis) // && (digitalRead(HARDWARE_ENABLE) == LOW)) 
     {
       Serial.println("Hardware Enable Switch is off. Stop Motion at actual position");   // If axes are enabled and Hardware Enable Switch is LOW --> stop robot motion
       gEnableAxis = false;
