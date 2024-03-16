@@ -16,3 +16,6 @@
 (① and ② are plugged into female pin header 2,54mm)
 
 5V for the ESP32 power supply must be connected to the "VCC_ESP32" screw terminal. The power supply for the servo must be connected to the "VCC_Servo" screw terminal (6V). The servos are connected to the pin header "gripper servos".
+
+### Schamatic
+![schametic_gripper](images/schematic_gripper.png)

@@ -21,6 +21,6 @@
 
 5V for the ESP32 power supply must be connected to the "VCC_ESP32" screw terminal. 24V for the servo stepper power supply must be connected to the "VCC_Stepper" (on the picture incorrectly "VCC_Servo") screw terminal. The steppers of axes 1 - 6 are connected to the pin header "Axis 1-6". An external enable switch can be connected to the "Enable" screw terminal. This allows the axes to be switched off independently of the software. If no switch is to be used, the contacts can be short-circuited.
 
-
-
+### Schamatic
+![schametic_arm](images/schematic_arm.png)
 

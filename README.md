@@ -17,7 +17,7 @@ To control the 6 axes and the gripper, ROS2 implementations were written that co
 
 The ROS2 packages are packaged in Docker containers so that they can be used by others without any problems. The repos of our ROS2 packages are linked in the folder [ROS-Packages](https://github.com/mathias31415/diy_robotics/tree/main/ROS-Packages). To just use our ROS application go to the repo [diy_robot_application](https://github.com/RobinWolf/diy_robot_application) and follow the HowTo. To understand our implementation you should read all readmes of our ROS repos 
 
-The PC on which the ROS2 packages are executed must be connected to the same Wifi as the two ESP32s. The two ESP32s then receive messages from the PC via TCP-IP with the commands for the gripper and the 6-axes and then control the gripper and the axes accordingly. The VS-Code PlatformIO project folders for the ESP32 of the gripper and the axes can be found in the folders [diy_robotics_arm_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_esp32) and [diy_robotics_gripper_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_esp32). Make sure to adapt the SSID and IP address as well as the password of your Wifi in the ``Configuration.h`` file.
+The PC on which the ROS2 packages are executed must be connected to the same Wifi as the two ESP32s. The two ESP32s then receive messages from the PC via TCP-IP with the commands for the gripper and the 6-axes and then control the gripper and the axes accordingly. The VS-Code PlatformIO project folders for the ESP32 of the gripper and the axes can be found in the folders [diy_robotics_arm_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_esp32) and [diy_robotics_gripper_esp32](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_esp32). Make sure to adapt the SSID and IP address as well as the password of your Wifi in the ``Configuration.h`` files.
 
 
 The [hardwaretest_without_ROS](https://github.com/mathias31415/diy_robotics/tree/main/hardwaretest_without_ROS) folder contains additional programs to test the hardware without ROS via the Serial Monitor.
@@ -50,11 +50,11 @@ The information serves as a guide only. Prices may change over time. It is also 
 | --- | --- | --- | --- | --- |
 | 1 | Servo SG90 Continuous Drive (Metal 360 Degree) | 2 | 9,00 | [Link](https://de.aliexpress.com/item/1005004550512467.html?spm=a2g0o.order_list.order_list_main.10.12875c5fjUap8p&gatewayAdapt=glo2deu) |
 
-### 2. PCBs
+### 3. PCBs
 The geber-files for the PCBs can be found in folders [diy_robotics_arm_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_arm_pcb) and [diy_robotics_gripper_pcb](https://github.com/mathias31415/diy_robotics/tree/main/diy_robotics_gripper_pcb). With the geber-files, the PCBs can be ordered from any manufacturer. At JLCPCB we paid a total of just over €30 for 5 pieces of both PCBs.
 The parts for assembling the PCBs are listed below. Note that some parts are required for both PCBs and are therefore listed twice. However, one set is often sufficient for both PCBs (e.g. for the pin headers). For components such as the ESP-32, it is cheaper to buy a set of two for both PCBs than to order two individual ESP-32s.
 
-#### 2.1 Arm PCB
+#### 3.1 Arm PCB
 | Index | Description | Quantity | Total price in € | Link |
 | --- | --- | --- | --- | --- |
 | 1 | 0.96 Inch OLED Display SSD1306 | 1 | 1,78 | [Link](https://de.aliexpress.com/item/1005005970901119.html?spm=a2g0o.order_list.order_list_main.22.4a065c5ffRtZfv&gatewayAdapt=glo2deu) |
@@ -67,7 +67,7 @@ The parts for assembling the PCBs are listed below. Note that some parts are req
 | 8 | Female pin header 2,54mm for the display, ESP-32 and Stepper Drivers |  | 1,77 for male + female set | [Link](https://de.aliexpress.com/item/4000873858801.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.e4a5600cBKuomq&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=c41c94ec-099f-42bf-a647-59697bc6a5d5&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:c41c94ec-099f-42bf-a647-59697bc6a5d5,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21EUR%211.77%211.77%21%21%211.89%211.89%21%4021038dfc17098923902746506e96e7%2110000010058190554%21rec%21DE%213958237401%21&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A) |
 
 
-#### 2.2 Gripper PCB
+#### 3.2 Gripper PCB
 | Index | Description | Quantity | Total price in € | Link |
 | --- | --- | --- | --- | --- |
 | 1 | 0.96 Inch OLED Display SSD1306 | 1 | 1,78 | [Link](https://de.aliexpress.com/item/1005005970901119.html?spm=a2g0o.order_list.order_list_main.22.4a065c5ffRtZfv&gatewayAdapt=glo2deu) |
