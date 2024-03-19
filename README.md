@@ -3,6 +3,7 @@
 ## Overview
 
 This repo contains the results of a project work at the University of Applied Sciences Karlsruhe by **Robin Wolf, Hannes Bornemann and Mathias Fuhrer**. As part of the project work, the [Six-Axis Robot Arm WE-R2.4 from LoboCNC](https://www.printables.com/de/model/132260-we-r24-six-axis-robot-arm) was set up and a new gripper was developed.
+
 The project was supervised by Gergely Sóti, Philipp Augenstein and Prof. Dr.-Ing. habil. Björn Hein.
 
 ![Robot_blur](images/Robot_blur.png)
