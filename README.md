@@ -1,5 +1,8 @@
 # diy_robotics
 
+## Video of the results (in German)
+[![Video abspielen](https://img.youtube.com/vi/qf8R6U7XTOY/0.jpg)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
+
 ## Overview
 
 This repo contains the results of a project work at the University of Applied Sciences Karlsruhe by **Robin Wolf, Hannes Bornemann and Mathias Fuhrer**. As part of the project work, the [Six-Axis Robot Arm WE-R2.4 from LoboCNC](https://www.printables.com/de/model/132260-we-r24-six-axis-robot-arm) was set up and a new gripper was developed.
