@@ -13,6 +13,10 @@
 [![Video abspielen](https://img.youtube.com/vi/qf8R6U7XTOY/0.jpg)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
 
 
+https://github.com/mathias31415/diy_robotics/assets/148789048/ed346021-952f-4944-868e-b44e1cd26f48
+
+
+
 <a name="overview"/>
 
 ## Overview
