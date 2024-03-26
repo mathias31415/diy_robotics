@@ -1,7 +1,19 @@
 # diy_robotics
 
+## Table of Contents
+1. [Video of the results](#video)
+2. [Overview](#overview)
+3. [Possible improvements](#improvements)
+4. [Part list](#partlist)
+5. [Assembly-Videos by pfuscher666](#assemblyvideos)
+
+<a name="video"/>
+
 ## Video of the results (in German)
 [![Video abspielen](https://img.youtube.com/vi/qf8R6U7XTOY/0.jpg)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
+
+
+<a name="overview"/>
 
 ## Overview
 
@@ -28,11 +40,16 @@ The PC on which the ROS2 packages are executed must be connected to the same Wif
 The [hardwaretest_without_ROS](https://github.com/mathias31415/diy_robotics/tree/main/hardwaretest_without_ROS) folder contains additional programs to test the hardware without ROS via the Serial Monitor.
 
 
+<a name="improvements"/>
+
 ## Possible improvements
 
 - Conversion of the robot to metric screws
 - Endstops or sensors to determine the position of the robot or to move it to a home position
 
+
+
+<a name="partlist"/>
 
 ## Part list (as of March 2024)
 The information serves as a guide only. Prices may change over time. It is also worth comparing other providers and manufacturers.
@@ -80,3 +97,8 @@ The parts for assembling the PCBs are listed below. Note that some parts are req
 | 3 | 2-Pin Screw Terminal 5mm | 2 | 4,56 for a set | [Link](https://de.aliexpress.com/item/1005005595075178.html?spm=a2g0o.order_list.order_list_main.17.4a065c5ffRtZfv&gatewayAdapt=glo2deu) |
 | 4 | Pin Header 1x4 Pin Male 2,54mm | 1 | 1,77 for male + female set | [Link](https://de.aliexpress.com/item/4000873858801.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.e4a5600cBKuomq&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=c41c94ec-099f-42bf-a647-59697bc6a5d5&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:c41c94ec-099f-42bf-a647-59697bc6a5d5,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21EUR%211.77%211.77%21%21%211.89%211.89%21%4021038dfc17098923902746506e96e7%2110000010058190554%21rec%21DE%213958237401%21&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A) |
 | 5 | Female pin header 2,54mm for the display, ESP-32 and Stepper Drivers |  |1,77 for male + female set | [Link](https://de.aliexpress.com/item/4000873858801.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.e4a5600cBKuomq&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=c41c94ec-099f-42bf-a647-59697bc6a5d5&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:c41c94ec-099f-42bf-a647-59697bc6a5d5,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21EUR%211.77%211.77%21%21%211.89%211.89%21%4021038dfc17098923902746506e96e7%2110000010058190554%21rec%21DE%213958237401%21&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A) |
+
+
+<a name="assemblyvideos"/>
+
+## Assembly-Videos by pfuscher666
