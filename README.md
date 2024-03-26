@@ -10,11 +10,10 @@
 <a name="video"/>
 
 ## Video of the results (in German)
+
+This [YouTube video](https://www.youtube.com/watch?v=qf8R6U7XTOY) shows the results of our project work:
+
 [![Video abspielen](https://img.youtube.com/vi/qf8R6U7XTOY/0.jpg)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
-
-
-https://github.com/mathias31415/diy_robotics/assets/148789048/ed346021-952f-4944-868e-b44e1cd26f48
-
 
 
 <a name="overview"/>
@@ -106,3 +105,7 @@ The parts for assembling the PCBs are listed below. Note that some parts are req
 <a name="assemblyvideos"/>
 
 ## Assembly-Videos by pfuscher666
+
+[Pfuscher666](https://www.youtube.com/@pfuscher666) made a nice assembly video series on YouTube using our Github repo. If you want to recreate the robot, we recommend checking out his [playlist](https://youtube.com/playlist?list=PLlPSE-8AfOheRNZ__qo-JLWLydIsqo4Fw&si=UZEIlQIDYb_gISjW).
+
+[![Video abspielen](https://img.youtube.com/vi/72cq4wMddos/0.jpg)](https://www.youtube.com/watch?v=72cq4wMddos)
