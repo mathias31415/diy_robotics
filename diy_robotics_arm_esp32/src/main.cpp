@@ -42,7 +42,7 @@ bool onDataReceived(void *data, size_t len, void *response, size_t responseLen)
   // Check if the received data has the expected size
   if (len != sizeof(Communication::PcToRobot_t)) 
   {
-    Serial.println("Error: Unexpected size of received data");
+    // Serial.println("Error: Unexpected size of received data");
     return false;
   }
 
@@ -57,55 +57,54 @@ bool onDataReceived(void *data, size_t len, void *response, size_t responseLen)
   responseData.errorCode = ErrorCode::noError;
   responseData.active = gRobotActive;
   
-  if((gRobotActive == true))   // If robot is activated by PC
+
+  if(gRobotActive)   // Check if robot is active
   {
-    if(gEnableAxis) // && (digitalRead(HARDWARE_ENABLE) == LOW)) 
-    {
-      Serial.println("Hardware Enable Switch is off. Stop Motion at actual position");   // If axes are enabled and Hardware Enable Switch is LOW --> stop robot motion
-      gEnableAxis = false;
+    // Serial.println("Robot is active");
 
-      // Cancel motion at current position
-      for (auto axis : Axis::axisList)
-      {
-        axis->moveToPosition((axis->getPosition()));    // Overwrite target position with current position if Hardware Enable Switch is turned off during motion
-      }
-    }
-    else
+    // Check for each axis if the old and new axis position is the same --> if not, move axis
+    int index = 0;
+    bool mustMove = false;  // If axis position is not the same --> true
+    for (auto axis : Axis::axisList)
     {
-      // Check for each axis if the old and new axis position is the same up to 2 decimal places
-      int index = 0;
-      bool mustMove = false;  // If axis position is not the same --> true
-      for (auto axis : Axis::axisList)
+      double currentPosition = axis->getPosition();
+      double targetPosition = receivedData.jointSetpoints[index] * 1e-3;
+      if (abs(currentPosition - targetPosition) > 0.1)     // If axis position is not the same --> move (axis positions are rounded to 0.1 degrees)
       {
-        double currentPosition = axis->getPosition();
-        double targetPosition = receivedData.jointSetpoints[index] * 1e-3;
-        if (abs(currentPosition - targetPosition) > 0.1)     // If axis position is not the same --> move (axis positions are rounded to 2 decimal places)
+        mustMove = true;
+        if (!gEnableAxis)   // If axes are not enabled: enable axes
         {
-          mustMove = true;
-          if (!gEnableAxis)   // If axes are not enabled: enable axes
-          {
-            digitalWrite(ENABLE_ALL, HIGH);
-            gEnableAxis = true;
-            Serial.println("Enable all axis");
-          }
-
-          // Check if Hardware Enable Switch is enabled
-          if ((digitalRead(HARDWARE_ENABLE) == HIGH))   // if Soft and Hardware Enable HIGH --> move axis
-          {
-            axis->moveToPosition(receivedData.jointSetpoints[index]* 1e-3);     // Move to new axis position
-          }
+          digitalWrite(ENABLE_ALL, HIGH);
+          gEnableAxis = true;
+          // Serial.println("Enable all axis");
         }
-        index++;
+        // Check if Hardware Enable Switch is enabled (Hardware Enable switch is in series with Software enable)
+        if ((digitalRead(HARDWARE_ENABLE) == HIGH))   // if Soft and Hardware Enable HIGH --> move axis
+        {
+          axis->moveToPosition(receivedData.jointSetpoints[index]* 1e-3);     // Move to new axis position
+        }
       }
+      index++;
+    }
 
-      if (!mustMove && gEnableAxis)    // If axes do not need to move and axes are enabled --> disable axes
-      {
-        digitalWrite(ENABLE_ALL, LOW);
-        gEnableAxis = false;
-        Serial.println("Disable all axis");
-      } 
+    if (!mustMove && gEnableAxis)    // If axes do not need to move and axes are enabled --> disable axes
+    {
+      digitalWrite(ENABLE_ALL, LOW);
+      gEnableAxis = false;
+      // Serial.println("Disable all axis");
+    } 
+  }
+
+  else
+  {
+    // Serial.println("Robot is not active");
+    if (gEnableAxis)    // If axes are enabled and robot is not active --> disable axes
+    {
+      digitalWrite(ENABLE_ALL, LOW);
+      // Serial.println("Disable all axis");
     }
   }
+
 
   // Determine current axis positions for response
   int index = 0;
