@@ -91,13 +91,13 @@ public:
     if (position > _maxPos) 
     {
       position = _maxPos;
-      Serial.println("position > _maxPos");
+      // Serial.println("position > _maxPos");
     }
 
     else if (position < _minPos) 
     {
       position = _minPos;
-      Serial.println("position < _minPos");
+      // Serial.println("position < _minPos");
     }
     
     long stepSetpoint = 0;

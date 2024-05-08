@@ -46,10 +46,10 @@ bool onDataReceived(void *data, size_t len, void *response, size_t responseLen)
   Communication::PcToRobot_t receivedData;
   memcpy(&receivedData, data, sizeof(Communication::PcToRobot_t));
 
-  Serial.println("Received Data:");
-  //Serial.println("Enable Power: " + String(receivedData.enablePower));
-  Serial.println("Message Number: " + String(receivedData.messageNumber));
-  Serial.println("setGripper: " + String(receivedData.setGripper));
+  // Serial.println("Received Data:");
+  // Serial.println("Enable Power: " + String(receivedData.enablePower));
+  // Serial.println("Message Number: " + String(receivedData.messageNumber));
+  // Serial.println("setGripper: " + String(receivedData.setGripper));
   DrawDisplay("Received\nsetGripper to \n" + String(receivedData.setGripper) + " from PC");
   
   if((receivedData.setGripper == 0) && (myGripper.gripperState == 1))       // Open Gripper
