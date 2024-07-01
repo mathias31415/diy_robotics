@@ -13,7 +13,7 @@
 
 This [YouTube video](https://www.youtube.com/watch?v=qf8R6U7XTOY) shows the results of our project work:
 
-[![Video abspielen](https://img.youtube.com/vi/qf8R6U7XTOY/0.jpg)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
+[![Video abspielen](images/VideoPreview.png)](https://www.youtube.com/watch?v=qf8R6U7XTOY)
 
 
 <a name="overview"/>
